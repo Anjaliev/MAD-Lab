@@ -2,6 +2,7 @@ package com.example.anjaliapp;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -11,7 +12,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-
+EditText ed1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Login(View view) {
-        Toast.makeText(this, "Login successfully", Toast.LENGTH_SHORT).show();
+        ed1=findViewById(R.id.ed1);
+        Toast.makeText(this, ed1, Toast.LENGTH_SHORT).show();
     }
 }
